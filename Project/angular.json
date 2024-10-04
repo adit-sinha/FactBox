@@ -16,7 +16,7 @@
             "outputPath": "dist/project",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "baseHref": "Project/",
+            "baseHref": "QuizBox/Project/",
             "polyfills": [
               "zone.js"
             ],

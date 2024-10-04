@@ -16,7 +16,6 @@
             "outputPath": "dist/project",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "baseHref": "QuizBox/Project/",
             "polyfills": [
               "zone.js"
             ],
@@ -92,6 +91,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

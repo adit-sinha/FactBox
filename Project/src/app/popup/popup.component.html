@@ -2,7 +2,7 @@
         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
         </div>
-        <img class="img-fluid" [src]="'assets/img/categories/' + img" alt="..." />
+        <img class="img-fluid" [src]="'./assets/img/categories/' + img" alt="..." />
         <div class="portfolio-modal modal fade" [id]="'portfolioModal' + id" tabindex="-1" aria-labelledby="'portfolioModal' + id" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -20,7 +20,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" [src]="'assets/img/categories/' + img" alt="..." />
+                                    <img class="img-fluid rounded mb-5" [src]="'./assets/img/categories/' + img" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4"> {{ text }} </p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { TriviaService } from '../trivia.service';
+//import { TriviaService } from '../trivia.service';
 //not used yet, will implement questions later
 
 import { HttpClientModule } from '@angular/common/http';

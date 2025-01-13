@@ -3,4 +3,4 @@
 Project under development. 
 Remaining steps of implementation:
 
-- Fetching facts from MongoDB database
+- Fetching facts from MongoDB document

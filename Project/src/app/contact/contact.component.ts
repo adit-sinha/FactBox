@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { EmailService } from "./contact.service";
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -14,16 +13,4 @@ export class ContactComponent {
   name: string = '';
   text: string = '';
 
-  constructor(private emailService: EmailService) {}
-
-  sendEmail() {
-    this.emailService.sendEmail(this.to, this.name, this.text).subscribe(
-      response => {
-        console.log('Email sent successfully:', response);
-      },
-      error => {
-        console.error('Error sending email:', error);
-      }
-    );
-  }
 }

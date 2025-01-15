@@ -69,7 +69,7 @@ function getRandomFactsById(id: string, count: number): string[] {
 
 //Formatting chosen facts
 function format_Facts(facts: string[]): string {
-    return facts.map((fact, index) => `${index + 1}. ${fact}`).join('\n'); // Join with newlines and numbers
+    return facts.map((fact, index) => `${index + 1}. ${fact}`).join('\n');
 }
 
 P_MODALS.forEach(m => { //m i.e modal

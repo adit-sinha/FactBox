@@ -1,3 +1,11 @@
+import { ScienceFacts } from './FactsData/ScienceFacts'; 
+import { SportsFacts } from './FactsData/SportsFacts';
+import { VideoGamesFacts } from './FactsData/VideoGamesFacts'; 
+import { MusicFacts } from './FactsData/MusicFacts'; 
+import { MythologyFacts } from './FactsData/MythologyFacts'; 
+import { FilmFacts } from './FactsData/FilmFacts'; 
+
+
 export const P_MODALS = [
     {
         id: 'p1',
@@ -38,3 +46,35 @@ export const P_MODALS = [
         title: 'Film'
     }
 ]
+
+//Implementing random fact generation:
+const factsMap: { [key: string]: string[] } = {
+    'p1': ScienceFacts,  
+    'p2': SportsFacts,   
+    'p3': VideoGamesFacts,
+    'p4': MusicFacts,
+    'p5': MythologyFacts,
+    'p6': FilmFacts
+};
+
+
+function getRandomFactsById(id: string, count: number): string[] {
+    const facts = factsMap[id];
+    if (!facts) { return []; }
+
+    //Random generation:
+    const shuffled = facts.sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, count); 
+}
+
+//Formatting chosen facts
+function format_Facts(facts: string[]): string {
+    return facts.map((fact, index) => `${index + 1}. ${fact}`).join('\n'); // Join with newlines and numbers
+}
+
+P_MODALS.forEach(m => { //m i.e modal
+    const randomFacts = getRandomFactsById(m.id, 10); 
+    m.text = format_Facts(randomFacts);
+});
+
+console.log(P_MODALS);

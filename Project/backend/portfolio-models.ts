@@ -10,43 +10,44 @@ export const P_MODALS = [
     {
         id: 'p1',
         img: 'science.jpg',
-        text: 'This is 1',
+        text: ScienceFacts,
         title: 'Science'
     },
     {
         id: 'p2',
         img: 'sports.jpg',
-        text: 'This is 2',
+        text: SportsFacts,
         title: 'Sports'
     },
     {
         id: 'p3',
         img: 'video-games.jpg',
         //the first three pictures belong to https://www.freepik.com/
-        text: 'This is 3',
+        text: VideoGamesFacts,
         title: 'Video Games'
     },
     {
         id: 'p4',
         img: 'music.jpg',
-        text: 'This is 4',
+        text: MusicFacts,
         title: 'Music'
     },
     {
         id: 'p5',
         img: 'mythology.jpg',
-        text: 'This is 5',
+        text: MythologyFacts,
         title: 'Mythology'
     },
     {
         id: 'p6',
         img: 'film.jpg',
         //pictures 4 to 6 (inclusive) belong to https://www.vecteezy.com/ 
-        text: 'This is 6',
+        text: FilmFacts,
         title: 'Film'
     }
 ]
 
+/*
 //Implementing random fact generation:
 const factsMap: { [key: string]: string[] } = {
     'p1': ScienceFacts,  
@@ -76,5 +77,5 @@ P_MODALS.forEach(m => { //m i.e modal
     const randomFacts = getRandomFactsById(m.id, 10); 
     m.text = format_Facts(randomFacts);
 });
-
 console.log(P_MODALS);
+*/

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { PopupComponent } from '../popup/popup.component';
 
-import { P_MODALS } from '../portfolio-models';
+import { P_MODALS } from '../../../backend/portfolio-models';
 @Component({
   selector: 'app-quiz',
   standalone: true,
